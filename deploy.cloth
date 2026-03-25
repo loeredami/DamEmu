@@ -1,0 +1,3 @@
+!new s deploy
+!set build "go build ."
+!set run "go run ."
