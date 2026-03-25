@@ -7,6 +7,7 @@ import (
 )
 
 type Worker struct {
+	PID      uint64
 	IP       uint64
 	emulator *Emulator
 	stack    *ungo.Stack[uint64]

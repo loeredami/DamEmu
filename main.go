@@ -10,4 +10,10 @@ func main() {
 	if programMID.HasValue() {
 		defer emu.Free(programMID.Value())
 	}
+
+	programMID.IfPresent(func(mID uint64) {
+		if !emu.WorkerSpawnAt(mID) {
+			panic("Could not spawn main thread")
+		}
+	})
 }
