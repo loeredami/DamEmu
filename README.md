@@ -1,1 +1,1 @@
-An emulator made for a made up handheld console.
+An emulator made for a made up handheld device.
